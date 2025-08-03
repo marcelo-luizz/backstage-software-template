@@ -11,10 +11,10 @@ spec:
   parameters:
     - title: Fill in some steps
       required:
-        - component_id
+        - app_name
         - environment
       properties:
-        component_id:
+        app_name:
           title: Component name
           type: string
           description: Provide a component (microservice) name
@@ -34,7 +34,7 @@ spec:
       input:
         url: ./template
         values:
-          app_name: ${{parameters.component_id}}
+          app_name: ${{parameters.app_name}}
           app_env: ${{parameters.environment}}
 
     - id: publish
@@ -43,8 +43,8 @@ spec:
       input:
         allowedHosts:
           - github.com
-        description: This is ${{ parameters.component_id }}
-        repoUrl: github.com?owner=marcelo-luizz&repo=${{parameters.component_id}}
+        description: This is ${{ parameters.app_name }}
+        repoUrl: github.com?owner=marcelo-luizz&repo=${{parameters.app_name}}
         protectDefaultBranch: false
         repoVisibility: public
 
