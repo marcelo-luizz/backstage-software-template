@@ -41,15 +41,13 @@ spec:
       name: Publish
       action: publish:github
       input:
-        repository: github.com?owner=marcelo-luizz&repo=${{parameters.app_name}}
-        owner: marcelo-luizz
-      # input:
-      #   allowedHosts:
-      #     - github.com
-      #   description: This is ${{ parameters.app_name }}
-      #   repoUrl: github.com?owner=marcelo-luizz&repo=${{parameters.app_name}}
-      #   protectDefaultBranch: false
-      #   repoVisibility: public
+        # allowedHosts:
+        #   - github.com
+        description: This is ${{ parameters.app_name }}
+        repoUrl: github.com?owner=marcelo-luizz&repo=${{parameters.app_name}}
+        defaultBranch: main
+        protectDefaultBranch: false
+        repoVisibility: public
 
     - id: register
       name: Register
