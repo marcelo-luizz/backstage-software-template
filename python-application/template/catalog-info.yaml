@@ -1,0 +1,14 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{values.app_name}}
+  description: |
+    Python APP - ${{values.app_name}}
+  annotations:
+    github.com/project-slug: marcelo-luizz/${{values.app_name}}
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: dev-team
+  lifecycle: experimental
