@@ -44,7 +44,7 @@ spec:
         # allowedHosts:
         #   - github.com
         description: This is ${{ parameters.app_name }}
-        repoUrl: github.com?owner=marcelo-luizz&repo=${{parameters.app_name}}
+        repoUrl: github.com?owner=devops-brotherslab&repo=${{parameters.app_name}}
         defaultBranch: main
         protectDefaultBranch: false
         repoVisibility: public
