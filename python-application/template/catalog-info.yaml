@@ -6,9 +6,9 @@ metadata:
   description: |
     Python APP - ${{values.app_name}}
   annotations:
-    github.com/project-slug: marcelo-luizz/${{values.app_name}}
+    github.com/project-slug: devops-brotherslab/${{values.app_name}}
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
-  owner: dev-team
-  lifecycle: experimental
+  type: website
+  lifecycle: production
+  owner: group:default/backstage-admin
