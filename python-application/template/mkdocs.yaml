@@ -1,6 +1,7 @@
 site_name: ${{values.app_name}}
 site_description: 'Main documentation for the ${{values.app_name}}'
-repo_url: https://github.com/marcelo-luizz/python-application
+repo_url: https://github.com/devops-brotherslab/${{values.app_name}}
+
 edit_uri: edit/main/docs
 
 plugins:
