@@ -7,12 +7,16 @@ metadata:
 spec:
   owner: dev-team
   type: service
-
+  tags:
+    - Flask
+    - Github Actions
+    - Kubernetes
+    - ArgoCD
   parameters:
     - title: Fill in some steps
       required:
         - app_name
-        - environment
+        - squad_name
       properties:
         app_name:
           title: Component name test 
@@ -24,9 +28,9 @@ spec:
           type: string
           description: The environment where this component will be deployed
           enum:
-            - dev
-            - prod
-
+            - squad-a
+            - squad-b
+            - squad-c
   steps:
     - id: fetch-base
       name: Fetch Base
