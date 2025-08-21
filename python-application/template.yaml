@@ -11,7 +11,7 @@ metadata:
     - argocd
     - sonarqube
 spec:
-  owner: dev-team
+  owner: platform-engineering
   type: service
   parameters:
     - title: Fill in some steps
