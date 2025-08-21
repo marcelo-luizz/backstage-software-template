@@ -25,9 +25,9 @@ spec:
           description: Provide a component (microservice) name
           pattern: '^([a-zA-Z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$'
         environment:
-          title: Environment
+          title: Squad
           type: string
-          description: The environment where this component will be deployed
+          description: Squad Name
           enum:
             - squad-a
             - squad-b
