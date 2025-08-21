@@ -5,10 +5,11 @@ metadata:
   title: Python flask template
   description: Provisions a minimalistic flask application
   tags:
-    - Flask
-    - Github Actions
-    - Kubernetes
-    - ArgoCD
+    - flask
+    - github-actions
+    - kubernetes
+    - argocd
+    - sonarqube
 spec:
   owner: dev-team
   type: service
