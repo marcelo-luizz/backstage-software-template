@@ -4,14 +4,14 @@ metadata:
   name: python-template
   title: Python flask template
   description: Provisions a minimalistic flask application
-spec:
-  owner: dev-team
-  type: service
   tags:
     - Flask
     - Github Actions
     - Kubernetes
     - ArgoCD
+spec:
+  owner: dev-team
+  type: service
   parameters:
     - title: Fill in some steps
       required:
