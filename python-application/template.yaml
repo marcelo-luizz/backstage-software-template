@@ -11,6 +11,7 @@ metadata:
     - Kubernetes
     - ArgoCD
     - Sonarqube
+    - Veracode
 spec:
   owner: platform-engineering
   type: service
