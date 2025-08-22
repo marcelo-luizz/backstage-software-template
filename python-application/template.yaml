@@ -2,15 +2,14 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: python-template
-  title: Python Flask Template
+  title: Python flask template
   description: Provisions a minimalistic flask application
   tags:
-    - Python
-    - Flask
-    - Github-Actions
-    - Kubernetes
-    - ArgoCD
-    - Sonarqube
+    - flask
+    - github-actions
+    - kubernetes
+    - argocd
+    - sonarqube
 spec:
   owner: platform-engineering
   type: service
@@ -25,7 +24,7 @@ spec:
           type: string
           description: Provide a component (microservice) name
           pattern: '^([a-zA-Z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$'
-        squad_name:
+        environment:
           title: Squad
           type: string
           description: Squad Name
@@ -41,7 +40,7 @@ spec:
         url: ./template
         values:
           app_name: ${{parameters.app_name}}
-          squad_name: ${{parameters.squad_name}}
+          app_env: ${{parameters.environment}}
 
     - id: publish
       name: Publish
