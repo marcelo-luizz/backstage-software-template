@@ -12,6 +12,7 @@ metadata:
     - ArgoCD
     - Sonarqube
     - Veracode
+    - MVC
 spec:
   owner: platform-engineering
   type: service
